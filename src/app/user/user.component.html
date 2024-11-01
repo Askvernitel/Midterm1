@@ -1,0 +1,16 @@
+<h1>ArrayInput Was Passed From app.component</h1>
+
+<table class="table">
+    <tbody> 
+        <tr *ngFor="let parentUser of inputArray">
+            <td>{{parentUser.Id}}</td>
+            <td>{{parentUser.Firstname}}</td>
+            <td>{{parentUser.Lastname}}</td>
+            <td>{{parentUser.PhoneNumber}}
+            <td>{{parentUser.DateOfBirth}}</td>
+            <td>{{parentUser.Email}}</td>
+        </tr>
+    </tbody>
+</table>
+
+<button class="btn btn-danger" (click)="displayArray(inputArray)">Display Service Log</button>
